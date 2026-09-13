@@ -1,6 +1,6 @@
 {
   "install-bundled-skills": {
-    "digest": "29f6672a6850db2a6600e6b33d6fb79425e9a47322c71abdd17f5cb86b0b66a4",
+    "digest": "110a99671b098e80ba83327a022a2773c3dc069418b05a99cb9fe344aa60ba0a",
     "provider": "coloph-install-skills"
   }
 }

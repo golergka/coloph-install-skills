@@ -5,11 +5,11 @@ description: Bundle agent skills with a Python package, install them in a reposi
 
 This skill is bundled with the `coloph-install-skills` package.
 
-Keep these three roles separate:
+When reading this skill, please do not confuse three packagges and codebases:
 
-- The installer package is `coloph-install-skills`.
-- The provider package bundles skills. This example calls it `yak-shaving-example-package`.
-- The consuming repository installs the provider package and receives its skills.
+- `coloph-install-skills` which you have installed
+- package that you are developing (let's call it `yak-shaving-example-package`)
+- codebase `yak-shaving-example-package` get installed into
 
 ## Build your skills
 
