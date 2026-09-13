@@ -1,0 +1,38 @@
+[project]
+name = "coloph-install-skills"
+version = "0.1.0"
+description = "Install agent skills bundled with local development dependencies"
+readme = "README.md"
+license = "GPL-3.0-only"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/golergka/coloph-install-skills"
+Issues = "https://github.com/golergka/coloph-install-skills/issues"
+
+[project.scripts]
+coloph-install-skills = "coloph_install_skills.cli:main"
+
+[dependency-groups]
+dev = ["mypy>=1.15", "pytest>=8", "ruff>=0.9"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/coloph_install_skills"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.mypy]
+strict = true
+files = ["src"]
