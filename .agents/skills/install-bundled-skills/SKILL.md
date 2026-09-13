@@ -57,19 +57,12 @@ Add `--root PATH` when the repository is not the current directory.
 
 ## Include your skills in your package's installation
 
-In your package install documentation, instruct users to run `coloph-install-skills` command after installing your package:
+In your package install documentation, instruct users to run `coloph-install-skills` command after installing your package. For example, put this in your README.md:
 
-> To install yak-shaving-example-package and its skills, run the following commands:
+```markdown
+To install this package, run `uv run yak-shaving-example-package`, and then `uv run coloph-install-skills` to install bundled agent skills. Add this line to your AGENTS.md file:
 
-```sh
-uv add yak-shaving-example-package
-uv run coloph-install-skills
-```
-
-> When updating yak-shaving-example-package, run the following command to update its skills:
-
-```sh
-uv run coloph-install-skills
+> After installing dependencies, run `uv run coloph-install-skills` to install or update skills bundled with installed packages.
 ```
 
 The command copies each complete skill to `.agents/skills/`. It creates a relative link in `.claude/skills/`.
