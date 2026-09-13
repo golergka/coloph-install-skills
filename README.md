@@ -1,6 +1,6 @@
 # coloph-install-skills
 
-Use this package to bundle agent skills with another Python package and install them in a repository.
+When writing agent-first packages, you want to bundle it with skills to be installed alongside it. Use this utilty to do this automatically.
 
 Python 3.12 or later is required. The license is GPL-3.0-only.
 
@@ -13,7 +13,7 @@ uv add coloph-install-skills
 uv run coloph-install-skills
 ```
 
-Then use the `$install-bundled-skills` skill in Codex or `/install-bundled-skills` in Claude Code.
+Then use the `/install-bundled-skills` to integrate it.
 
 ## Development
 

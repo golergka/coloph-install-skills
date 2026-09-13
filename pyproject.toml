@@ -1,6 +1,6 @@
 [project]
 name = "coloph-install-skills"
-version = "0.1.0"
+version = "0.1.1"
 description = "Install agent skills bundled with local development dependencies"
 readme = "README.md"
 license = "GPL-3.0-only"
